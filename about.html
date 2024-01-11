@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>About - Babu Lal Mandal</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="./index.html">
+                <svg width="400" height="80" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#ff7e5f;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#feb47b;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    
+                    <text x="10" y="60" font-family="Arial" font-size="40" fill="url(#gradient)" id="fade">
+                        Babu Lal Mandal
+                    </text>
+                    
+                    <animate
+                        xlink:href="#fade"
+                        attributeName="opacity"
+                        values="0;1"
+                        dur="1s"
+                        keyTimes="0;1"
+                        repeatCount="1"
+                        fill="freeze"
+                    />
+                </svg>
+            </a>
+        </div>
+        <div class="menu">
+            <button class="home" onclick="window.location.href='./index.html'">Home</button>
+            <button class="about" onclick="window.location.href='./about.html'">About</button>
+            <button class="contact" onclick="window.location.href='./contact.html'">Contact</button>
+            <button class="resume" onclick="viewResume()">Resume</button>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello there! 👋 I'm Babu Lal Mandal, a passionate individual with a love for technology and a knack for problem-solving. I hold a BCA (Bachelor of Computer Applications) degree from IGNOU (Indira Gandhi National Open University) and am enthusiastic about exploring new concepts in the ever-evolving world of software development.</p>
+    
+        <!-- Remaining content from the "About Me" section -->
+    </section>
+
+    <!-- Additional sections or content for the About page can be added here -->
+
+    <script src="./index.js"></script>
+</body>
+</html>

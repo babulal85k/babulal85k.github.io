@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sample Website</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <svg width="400" height="80" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#ff7e5f;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#feb47b;stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+              
+                <text x="10" y="60" font-family="Arial" font-size="40" fill="url(#gradient)" id="fade">
+                  Babu Lal Mandal
+                </text>
+                
+                <animate
+                  xlink:href="#fade"
+                  attributeName="opacity"
+                  values="0;1"
+                  dur="1s"
+                  keyTimes="0;1"
+                  repeatCount="1"
+                  fill="freeze"
+                />
+            </svg>
+        </div>   
+        <div class="menu">
+            <button class="home" onclick="window.location.href='./index.html'">Home</button>
+            <button class="about" onclick="window.location.href='./about.html'">About</button>
+            <button class="contact" onclick="window.location.href='./contact.html'">Contact</button>
+            <button class="resume" onclick="viewResume()">Resume</button>
+        </div>
+            
+    </header>
+
+    <section id="about">
+        <div class="aboutMe">
+            <div class="poster">
+                <div class="img">
+                    <img src="data:image/jpeg;base64,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" alt="">
+                </div>
+    
+                <div class="card1">
+                    <h2>Hi Audience</h2>
+                    <p>Hello there! 👋 I'm Babu Lal Mandal, a passionate individual with a love for technology and a knack for problem-solving. I hold a BCA (Bachelor of Computer Applications) degree from IGNOU (Indira Gandhi National Open University) and am enthusiastic about exploring new concepts in the ever-evolving world of software development.</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <button id="downloadResumeBtn">Get Resume</button>
+            </div>
+        </div>
+        
+        <div class="backGround">
+            <h3>Background</h3>
+            <ul>
+                <li>🎓 Graduated with a BCA degree from IGNOU</li>
+                <li>💼 Currently learning as a Student at Prepleaf by Masai</li>
+                <li>🚀 Constantly learning and adapting to stay at the forefront of technology</li>
+            </ul>
+        </div>
+        
+    
+        <h3>Skills</h3>
+        <p>
+            Programming Languages: Python, HTML, CSS, JavaScript.<br>
+            Web Technologies: TBA<br>
+            Tools and Frameworks: Python library<br>
+            Databases: TBA
+        </p>
+    
+        <!-- Modify the projects section like this -->
+        <h3>Projects</h3>
+
+        <div class="project-card">
+            <h4>Bestbuy Clone</h4>
+            <p>Clone of Bestbuy website using HTML, CSS, and JavaScript.</p>
+            <p>Link: <a href="your_bestbuy_project_link_here" target="_blank">TBA</a></p>
+        </div>
+
+        <div class="project-card">
+            <h4>Flipkart Clone</h4>
+            <p>Clone of Flipkart website using HTML and CSS.</p>
+            <p>Link: <a href="your_flipkart_project_link_here" target="_blank">TBA</a></p>
+        </div>
+
+    
+        <h3>Interests</h3>
+        <ul>
+            <li>🤖 Artificial Intelligence and Machine Learning</li>
+            <li>🌐 Web Development</li>
+            <li>📚 Continuous Learning and Skill Improvement</li>
+        </ul>
+    
+        <h3>Connect with Me</h3>
+        <p>
+            📧 Email: <a href="mailto:madhukarbabulal5@gmail.com">madhukarbabulal5@gmail.com</a><br>
+            💼 LinkedIn: <a href="https://www.linkedin.com/in/babu-lal-mandal-9b602b23b/" target="_blank">Babu Lal Mandal</a>
+        </p>
+    
+        <p>Feel free to reach out if you have any questions, collaboration ideas, or just want to chat about technology! 😊</p>
+    </section>
+    
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>
