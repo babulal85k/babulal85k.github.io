@@ -267,6 +267,15 @@ hr {
     }
 }
 
+@media screen and (max-width: 422px) {
+    .nav_home .babu,
+    .nav_home .lal,
+    .nav_home .mandal {
+        display: none;
+    }
+}
+
+
 #home{
     width: 100%;
     background-color: rgb(255, 255, 255);
