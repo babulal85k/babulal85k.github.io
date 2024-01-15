@@ -31,6 +31,7 @@ body {
     scroll-behavior: smooth;
 }
 
+
 .blur {
     backdrop-filter: blur(10px);
     background-color: rgba(115, 114, 151, 0.342); /* Set a background color with alpha for transparency */
@@ -50,6 +51,7 @@ body {
     display: inline-block;
     overflow: hidden;
 }
+
 
 .links2 {
     text-decoration: none;
@@ -341,7 +343,7 @@ border-bottom: 1px  solid white;
 }
 
 #services {
-    background-image: url('./premium_photo-1683141123518-ae57c1b4d335.avif');
+    background-color: #c28325;
     /* width: 100%; */
     border-bottom: 1px  solid white;
     height: 100vh;
@@ -352,8 +354,25 @@ border-bottom: 1px  solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 150px;
     color: #fff;
+}
+
+#services h1 {
+    text-align: center;
+    padding: 40px;
+    border: 1px solid  white;
+}
+
+#logo_skill {
+    width: 60px;
+}
+
+#skills_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 25px;
+    width: 100%;
 }
 
 #space {
@@ -383,3 +402,4 @@ border-bottom: 1px  solid white;
     color: white;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
+
