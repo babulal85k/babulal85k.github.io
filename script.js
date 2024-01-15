@@ -66,5 +66,5 @@ window.onscroll = function () {
         navContainer.classList.remove("blur", "border");
     }
 
-    prevScrollPos = currentScrollPos;
+    prevScrollPos = 0;
 };

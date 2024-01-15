@@ -276,11 +276,43 @@ hr {
 }
 
 
-#home{
+#home {
+    background-image: url('./photo-1508921340878-ba53e1f016ec.avif');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust as needed based on your design */
+    display: flex;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 800;
 }
+
+#about {
+    background-image: url('path/to/about-background.jpg');
+    z-index: 950;
+}
+
+#work {
+    background-image: url('path/to/work-background.jpg');
+    z-index: 950;
+}
+
+#contact {
+    background-image: url('path/to/contact-background.jpg');
+    z-index: 950;
+}
+
+#services {
+    background-image: url('path/to/contact-background.jpg');
+    z-index: 950;
+}
+
+
 
 #about {
     width: 100%;
@@ -302,6 +334,6 @@ hr {
 
 #contact{
     width: 100%;
-    background-color: rgb(8, 14, 88);
+    background-color: rgba(25, 38, 221, 0.671);
     height: 100vh;
 }
