@@ -150,7 +150,7 @@ hr {
     transition: 0.4s;
 }
 
-.overlay {
+/* .overlay {
     display: block;
     position: fixed;
     top: 0;
@@ -158,8 +158,8 @@ hr {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7); /* Transparent black background */
-    z-index: 2;
-}
+    /* z-index: 2;
+} */ */
 
 /* Styles for the cross icon when active */
 .hamburger_menu.active .hamburger_menu:nth-child(1) {
@@ -293,47 +293,65 @@ hr {
 }
 
 #about {
-    background-image: url('path/to/about-background.jpg');
-    z-index: 950;
+    background-image: url('./premium_photo-1678565869434-c81195861939.avif');
+    margin: 0;
+    padding: 0;
+    
 }
 
 #work {
-    background-image: url('path/to/work-background.jpg');
-    z-index: 950;
+    background-image: url('./photo-1508921340878-ba53e1f016ec.avif');
+    margin: 0;
+    padding: 0;
 }
 
 #contact {
-    background-image: url('path/to/contact-background.jpg');
-    z-index: 950;
+    background-image: url('./photo-1508921340878-ba53e1f016ec.avif');
+    margin: 0;
+    padding: 0;
 }
 
 #services {
-    background-image: url('path/to/contact-background.jpg');
-    z-index: 950;
+    background-image: url('./photo-1508921340878-ba53e1f016ec.avif');
+    margin: 0;
+    padding: 0;border: 1px solid blue;
 }
 
-
+#space {
+    height: 100vh;
+    position: relative;
+    top: 100vh;
+    z-index: 900;
+}
 
 #about {
     width: 100%;
-    background-color: rgb(204, 18, 18);
+    border: 1px solid blue;
     height: 100vh;
+    position: relative;
+    z-index: 900;
 }
 
 #work{
     width: 100%;
-    background-color: rgb(5, 75, 46);
+    border: 1px solid blue;
     height: 100vh;
+    position: relative;
+    z-index: 900;
 }
 
 #services{
     width: 100%;
-    background-color: rgb(29, 241, 231);
+    border: 1px solid blue;
     height: 100vh;
+    position: relative;
+    z-index: 900;
 }
 
 #contact{
     width: 100%;
-    background-color: rgba(25, 38, 221, 0.671);
+    border: 1px solid blue;
     height: 100vh;
+    position: relative;
+    z-index: 900;
 }
