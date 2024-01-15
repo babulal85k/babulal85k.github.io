@@ -1,162 +1,298 @@
-body:not(.scrollbar-visible) {
-    margin: 0;
+body {
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #ffffff; /* or use a background image */
-    overflow-x: hidden; /* This hides the horizontal scrollbar */
+    margin: 0;
 }
 
-
-
-/* Header  */
-
-header {
+.nav_container{
     display: flex;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    justify-content: space-between;
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-radius: 5px;
-}
-
-.menu {
-    display: flex;
-    /* justify-content: space-evenly; */
     align-items: center;
-    background-color: #333;
-    padding: 15px 0;
+    justify-content: center;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+    
 }
 
-.menu button {
-    background-color: #555;
-    color: #fff;
-    padding: 10px 15px;
-    margin: 0 5px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.menu button:hover {
-    background-color: #777;
-}
-
-
-
-
-.menu button {
-    /* Style the navigation buttons */
-    background-color: #555;
-    color: #fff;
-    padding: 10px 15px;
-    margin: 0 5px;
-    border: none;
-    cursor: pointer;
-}
-
-#about, #contact {
+#nav_bar {
     display: flex;
-    flex-direction: column;
-    margin-top: 120px;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.aboutMe, .backGround {
-    display: flex;
-    flex-wrap: wrap;
-    height: 450px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 10px;
-}
-
-.aboutMe{
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.img{
-    margin-left: 50px;
-}
-
-
-.card1{
-    margin-right: 40px;
-    color: green;
-    font-size: 17px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
-.card{
-    margin-left: 50px;
-}
-
-.poster {
-    display: flex;
-    flex-direction: row;
+    width: 60%;
+    height: 40px;
+    border-radius: 30px;
+    align-items: center;
     justify-content: space-between;
+    padding: 0px 10px;
+    transition: background-color 0.5s;
 }
 
-.card1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 600px;
+.nav_btn a {
+    scroll-behavior: smooth;
 }
 
-#about #downloadResumeBtn {
-    background-color: #3c0ee4; /* Green background color */
-    color: white; /* White text color */
-    padding: 20px 30px; /* Padding around text */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Add some border-radius for rounded corners */
-    cursor: pointer; /* Add a pointer cursor on hover */
-    font-size: 17px; /* Adjust font size */
+.blur {
+    backdrop-filter: blur(10px);
+    background-color: rgba(115, 114, 151, 0.342); /* Set a background color with alpha for transparency */
 }
 
-#about #downloadResumeBtn:hover {
-    background-color: #05245e; /* Darker green color on hover */
+.border {
+    border: 1px solid rgba(255, 255, 255, 0.555);
 }
 
-
-#downloadResumeBtn:hover {
-    background-color: #01000c; /* Darker green color on hover */
-}
-
-
-h2, h3, h4 {
+.links {
+    text-decoration: none;
     color: #333;
+    margin: 0 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
 }
 
-ul {
-    list-style-type: none;
-}
-
-.project-card {
-    background-color: #fff;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-
-.menu button:hover, a:hover {
-    background-color: #777;
+.links2 {
+    text-decoration: none;
+    color: #333;
+    margin: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.664);
+    width: 100vh;
 }
 
 
-@media (max-width: 600px) {
-    /* Add styles for smaller screens */
+.links .babu {
+    display: inline-block;
+    transform: translateY(100%);
+    transition: transform 0.5s;
+}
+
+.links .mandal {
+    display: inline-block;
+    transform: translateY(-100%);
+    transition: transform 0.5s;
+}
+
+.links:hover .babu {
+    transform: translateY(0);
+}
+
+.links:hover .mandal {
+    transform: translateY(0);
+}
+
+.nav_home:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav_home:hover .home{
+    display: none;
+}
+
+.nav_home .lal {
+    display: none;
+    transition: transform 0.5s;
+}
+
+.nav_home:hover .lal {
+    display: inline-block; /* or any other display property you prefer */
+}
+
+/* Styles for the hamburger menu */
+.hamburger_menu {
+    display: none;
+    cursor: pointer;
+}
+
+.nav_btn2 {
+    display: none;
+    position: absolute;
+    top: 42px; /* Adjust as needed based on your design */
+    left: 0;
+    z-index: 1;
+    background-color: #38382b4d;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.nav_btn2Go {
+    display: block;
+    
+}
+hr {
+    color: black;
+}
+
+.nav_btn2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_btn2 li {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+/* Show the dropdown menu when active */
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    z-index: 2;
+}
+
+/* Styles for the cross icon when active */
+.hamburger_menu.active .hamburger_menu:nth-child(1) {
+    transform: rotate(-50deg) translate(-5px, 6px);
+}
+
+.hamburger_menu.active .hamburger_menu:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger_menu.active .hamburger_menu:nth-child(3) {
+    transform: rotate(50deg) translate(-6px, -6px);
+}
+
+@media screen and (max-width: 968px) {
+
+    .nav_btn {
+        display: none;
+    }
+
+    .hamburger_menu {
+        display: block;
+    }
+
+    /* Additional styles for the menu items when the hamburger menu is active */
+    .hamburger_menu.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger_menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger_menu.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    #nav_bar {
+        display: flex;
+        width: 80%;
+        height: 40px;
+        border-radius: 30px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10px;
+        transition: background-color 0.5s;
+    }
+    
+    .blur {
+        backdrop-filter: blur(10px);
+        background-color: rgba(115, 114, 151, 0.342); /* Set a background color with alpha for transparency */
+    }
+    
+    .border {
+        border: 1px solid rgba(255, 255, 255, 0.555);
+    }
+
+    .links {
+        text-decoration: none;
+        color: #333;
+        margin: 0 15px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+    }
+    
+    .links .babu {
+        display: inline-block;
+        transform: translateY(100%);
+        transition: transform 0.5s;
+    }
+    
+    .links .mandal {
+        display: inline-block;
+        transform: translateY(-100%);
+        transition: transform 0.5s;
+    }
+    
+    .links:hover .babu {
+        transform: translateY(0);
+    }
+    
+    .links:hover .mandal {
+        transform: translateY(0);
+    }
+    
+    .nav_home:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .nav_home:hover .home{
+        display: none;
+    }
+    
+    .nav_home .lal {
+        display: none;
+        transition: transform 0.5s;
+    }
+    
+    .nav_home:hover .lal {
+        display: inline-block; /* or any other display property you prefer */
+    }
+}
+
+#home{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+#about {
+    width: 100%;
+    background-color: rgb(204, 18, 18);
+    height: 100vh;
+}
+
+#work{
+    width: 100%;
+    background-color: rgb(5, 75, 46);
+    height: 100vh;
+}
+
+#services{
+    width: 100%;
+    background-color: rgb(29, 241, 231);
+    height: 100vh;
+}
+
+#contact{
+    width: 100%;
+    background-color: rgb(8, 14, 88);
+    height: 100vh;
 }
