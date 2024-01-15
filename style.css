@@ -287,7 +287,7 @@ hr {
     width: 100%;
     flex-direction: column;
     justify-content: center;
-    padding-left: 150px;
+    padding-left: 50px;
     color: #fff;
     position: fixed;
     top: 0;
@@ -306,12 +306,12 @@ border-bottom: 1px  solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 150px;
+    padding-left: 50px;
     color: #fff;
 }
 
 #work {
-    background-image: url('./photo-1583508915901-b5f84c1dcde1.avif');
+    background-color: #333;
     /* width: 100%; */
 border-bottom: 1px  solid white;
     height: 100vh;
@@ -322,8 +322,24 @@ border-bottom: 1px  solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 150px;
+    padding-left: 50px;
     color: #fff;
+}
+
+.card_container {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    padding: 0 200px;
+}
+
+.project_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border: 2px solid black;
 }
 
 #contact {
@@ -338,12 +354,12 @@ border-bottom: 1px  solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 150px;
+    padding-left: 50px;
     color: #fff;
 }
 
 #services {
-    background-color: #c28325;
+    background-color: #881815;
     /* width: 100%; */
     border-bottom: 1px  solid white;
     height: 100vh;
@@ -367,11 +383,17 @@ border-bottom: 1px  solid white;
     width: 60px;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #skills_container{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 25px;
     width: 100%;
 }
 
