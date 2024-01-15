@@ -143,10 +143,10 @@ hr {
 /* Show the dropdown menu when active */
 
 .bar {
-    width: 30px;
-    height: 3px;
+    width: 18px;
+    height: 2px;
     background-color: #333;
-    margin: 5px 0;
+    margin: 6px 0;
     transition: 0.4s;
 }
 
@@ -159,7 +159,7 @@ hr {
     height: 100%;
     background: rgba(0, 0, 0, 0.7); /* Transparent black background */
     /* z-index: 2;
-} */ */
+} */ 
 
 /* Styles for the cross icon when active */
 .hamburger_menu.active .hamburger_menu:nth-child(1) {
