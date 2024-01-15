@@ -294,7 +294,7 @@ hr {
 
 #about {
     background-image: url('./premium_photo-1678565869434-c81195861939.avif');
-    width: 100%;
+    /* width: 100%; */
 border-bottom: 1px  solid white;
     height: 100vh;
     position: relative;
@@ -310,7 +310,7 @@ border-bottom: 1px  solid white;
 
 #work {
     background-image: url('./photo-1583508915901-b5f84c1dcde1.avif');
-    width: 100%;
+    /* width: 100%; */
 border-bottom: 1px  solid white;
     height: 100vh;
     position: relative;
@@ -326,7 +326,7 @@ border-bottom: 1px  solid white;
 
 #contact {
     background-image: url('./photo-1484417894907-623942c8ee29.avif');
-    width: 100%;
+    /* width: 100%; */
     border-bottom: 1px  solid white;
     height: 100vh;
     position: relative;
@@ -342,7 +342,7 @@ border-bottom: 1px  solid white;
 
 #services {
     background-image: url('./premium_photo-1683141123518-ae57c1b4d335.avif');
-    width: 100%;
+    /* width: 100%; */
     border-bottom: 1px  solid white;
     height: 100vh;
     position: relative;
