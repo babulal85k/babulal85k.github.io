@@ -294,64 +294,43 @@ hr {
 
 #about {
     background-image: url('./premium_photo-1678565869434-c81195861939.avif');
-    margin: 0;
-    padding: 0;
-    
+    width: 100%;
+    border: 1px solid blue;
+    height: 100vh;
+    position: relative;
+    z-index: 900;
 }
 
 #work {
     background-image: url('./photo-1508921340878-ba53e1f016ec.avif');
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    border: 1px solid blue;
+    height: 100vh;
+    position: relative;
+    z-index: 900;
 }
 
 #contact {
     background-image: url('./photo-1508921340878-ba53e1f016ec.avif');
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    border: 1px solid blue;
+    height: 100vh;
+    position: relative;
+    z-index: 900;
 }
 
 #services {
     background-image: url('./photo-1508921340878-ba53e1f016ec.avif');
-    margin: 0;
-    padding: 0;border: 1px solid blue;
+    width: 100%;
+    border: 1px solid blue;
+    height: 100vh;
+    position: relative;
+    z-index: 900;
 }
 
 #space {
     height: 100vh;
     position: relative;
     top: 100vh;
-    z-index: 900;
-}
-
-#about {
-    width: 100%;
-    border: 1px solid blue;
-    height: 100vh;
-    position: relative;
-    z-index: 900;
-}
-
-#work{
-    width: 100%;
-    border: 1px solid blue;
-    height: 100vh;
-    position: relative;
-    z-index: 900;
-}
-
-#services{
-    width: 100%;
-    border: 1px solid blue;
-    height: 100vh;
-    position: relative;
-    z-index: 900;
-}
-
-#contact{
-    width: 100%;
-    border: 1px solid blue;
-    height: 100vh;
-    position: relative;
     z-index: 900;
 }
