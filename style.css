@@ -295,42 +295,70 @@ hr {
 #about {
     background-image: url('./premium_photo-1678565869434-c81195861939.avif');
     width: 100%;
-    border: 1px solid blue;
+border-bottom: 1px  solid white;
     height: 100vh;
     position: relative;
     z-index: 900;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+    color: #fff;
 }
 
 #work {
-    background-image: url('./photo-1508921340878-ba53e1f016ec.avif');
+    background-image: url('./photo-1583508915901-b5f84c1dcde1.avif');
     width: 100%;
-    border: 1px solid blue;
+border-bottom: 1px  solid white;
     height: 100vh;
     position: relative;
     z-index: 900;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+    color: #fff;
 }
 
 #contact {
-    background-image: url('./photo-1508921340878-ba53e1f016ec.avif');
+    background-image: url('./photo-1484417894907-623942c8ee29.avif');
     width: 100%;
-    border: 1px solid blue;
+    border-bottom: 1px  solid white;
     height: 100vh;
     position: relative;
     z-index: 900;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+    color: #fff;
 }
 
 #services {
-    background-image: url('./photo-1508921340878-ba53e1f016ec.avif');
+    background-image: url('./premium_photo-1683141123518-ae57c1b4d335.avif');
     width: 100%;
-    border: 1px solid blue;
+    border-bottom: 1px  solid white;
     height: 100vh;
     position: relative;
     z-index: 900;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+    color: #fff;
 }
 
 #space {
     height: 100vh;
     position: relative;
     top: 100vh;
-    z-index: 900;
+    z-index: 900; border-bottom: 1px  solid white;
 }
