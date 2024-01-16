@@ -512,6 +512,7 @@ hr {
 
 #skills_container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
@@ -529,20 +530,120 @@ hr {
 #contactForm {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
+
+/* Style for the label */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Style for the input field */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Additional styling for a focused input */
+input:focus {
+    border-color: #007bff; /* Change to your preferred focus color */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional: Add a subtle box shadow */
+}
+
 
 #sub {
     border: none;
     border-radius: 10px;
     align-items: center;
-    width: 100px;
-    margin-top: 20px;
-    height: 25px;
+    width: 150px;
+    font-size: 18px;
+    margin-top: 30px;
+    height: 35px;
     background-color: rgba(13, 13, 185, 0.829);
     color: white;
     cursor: pointer;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
+#footer {
+    background-color: #727477;
+    /* width: 100%; */
+    border-bottom: 1px  solid white;
+    height: 20vh;
+    position: relative;
+    z-index: 900;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    color: #141414;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styling */
+.footer-logo img {
+    width: 50px; /* Adjust the width of your logo */
+    margin-right: 10px;
+}
+
+.footer-logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Links styling */
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1rem;
+}
+
+/* Social media icons styling */
+.footer-social a {
+    margin-right: 10px;
+}
+
+.footer-social img {
+    width: 25px; /* Adjust the size of your social media icons */
+}
+
+/* Bottom section of the footer */
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+}
