@@ -68,3 +68,27 @@ window.onscroll = function () {
 
     prevScrollPos = 0;
 };
+
+function downloadResume() {
+    // Replace 'path/to/your/resume.pdf' with the actual path to your resume file
+    var fileUrl = './BabuLalMandal-cap01_001.pdf';
+    
+    // Create a link element
+    var downloadLink = document.createElement('a');
+    
+    // Set the href attribute to the file path
+    downloadLink.href = fileUrl;
+    
+    // Set the download attribute with the desired filename
+    downloadLink.download = 'Babu_Lal_Mandal_Resume.pdf';
+    
+    // Append the link to the body
+    document.body.appendChild(downloadLink);
+    
+    // Trigger a click on the link to start the download
+    downloadLink.click();
+    
+    // Remove the link from the body
+    document.body.removeChild(downloadLink);
+  }
+  
