@@ -295,7 +295,9 @@ hr {
 
 
 #home {
-    
+    background-image: url(./photo3.png);
+    background-size:cover;
+    background-position: center;
     height: 100vh; /* Adjust as needed based on your design */
     display: flex;
     width: 100%;
@@ -308,18 +310,13 @@ hr {
 }
 
 .welcome1 {
-    background-image: url(./photo.jpg);
     width: 50%;
-    
-    background-size: cover;
-    background-position: center;
     display: flex;
     height: 100vh;
-
 }
 
 .welcome2 {
-    background-color: #f1f1f1;
+    
     display: flex;
     overflow: auto;
     flex-direction: column;
@@ -328,6 +325,7 @@ hr {
     height: 100vh;
     width: 70%;
 }
+
 
 .welcome2 p {
     font-size: 25px;
@@ -352,7 +350,7 @@ hr {
     }
   
     to {
-      width: 50%;
+      width: 60%;
     }
   }
   
