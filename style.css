@@ -440,35 +440,50 @@ hr {
 }
 
 #work {
-    background-color: #c5bcbc;
+    background-color: #ffffff;
     /* width: 100%; */
-border-bottom: 1px  solid white;
+    border-bottom: 1px  solid white;
     height: 100vh;
     position: relative;
     z-index: 900;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 50px;
-    color: #fff;
-}
-
-.card_container {
     display: flex;
     flex-direction: row;
-    gap: 200px;
-    padding: 0 200px;
+    justify-content: center;
+    padding-left: 50px;
+    color: #0e0e0e;
 }
 
-.project_card{
+.card_container  {
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+
+.project_card1{
+    background-image: url(./bestbuy.png);
+    display: flex;
+    background-size: cover;
+    background-position: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    border: 2px solid black;
+    width: 20%;
+    height: 80vh;
+    border: 1px solid black;
+}
+
+.project_card2{
+    background-image: url(./flipkart.png);
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    border: 1px solid black;
+    height: 80vh;
 }
 
 #contact {
