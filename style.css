@@ -283,7 +283,25 @@ hr {
     .nav_home:hover .lal {
         display: inline-block; /* or any other display property you prefer */
     }
+
+    #home {
+        background-image: url(./photo3.png);
+        background-size:cover;
+        background-position: center;
+        height: 100vh; /* Adjust as needed based on your design */
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        color: #fff;
+        position: fixed;
+        top: 0;
+        z-index: 800;
+    }
+
+    
 }
+
 
 @media screen and (max-width: 422px) {
     .nav_home .babu,
@@ -318,12 +336,11 @@ hr {
 .welcome2 {
     
     display: flex;
-    overflow: auto;
+    
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 100vh;
-    width: 70%;
+    
 }
 
 
@@ -355,7 +372,7 @@ hr {
   }
   
 .disco {
-    color: red;
+    color: rgb(116, 14, 199);
     font-size: 60px;
     width: 200px;
 }
@@ -385,6 +402,7 @@ hr {
   
 
 #about {
+    background-color: #cbced8;
     border-bottom: 1px  solid white;
     height: 100vh;
     position: relative;
@@ -393,7 +411,7 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: #fff;
+    color: #131313;
 }
 
 .card_container_about {
@@ -402,36 +420,40 @@ hr {
     background-position: center;
     display: flex;
     height: 100vh;
-    width: 60%;
+    width: 50%;
 }
 
 .card_container1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #060918;
+    background-color: #cbced8;
     justify-content: center;
-    align-items: left;
+    align-items: flex-start;
     height: 100vh;
-    padding: 0 100px;
+    margin: 0 100px; /* Adjusted from padding to margin */
     width: 50%;
 }
+
 
 .text_con {
     display: flex;
     flex-direction: column;
-    width: 65ch;
+    width: auto;
     line-height: 1.5rem;
 }
 
-.text_con h2  {
+.text_con h2 {
+    display: flex;
     font-size: 25px;
-    color: blueviolet;
-    border: 1px solid blueviolet;
-    width: 150px;
+    color: rgb(12, 30, 185);
+    border: 1px solid rgb(16, 45, 211);
+    /* Adjusted width to match the width of the text */
+    width: max-content;
     border-radius: 10px;
     padding: 6px;
 }
+
 
 .text_con p {
     font-size: 20px;
@@ -439,52 +461,6 @@ hr {
     line-height: 2rem;
 }
 
-#work {
-    background-color: #ffffff;
-    /* width: 100%; */
-    border-bottom: 1px  solid white;
-    height: 100vh;
-    position: relative;
-    z-index: 900;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 50px;
-    color: #0e0e0e;
-}
-
-.card_container  {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 20px;
-}
-
-.project_card1{
-    background-image: url(./bestbuy.png);
-    display: flex;
-    background-size: cover;
-    background-position: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 80vh;
-    border: 1px solid black;
-}
-
-.project_card2{
-    background-image: url(./flipkart.png);
-    display: flex;
-    background-size: cover;
-    background-position: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    border: 1px solid black;
-    height: 80vh;
-}
 
 #contact {
     background-image: url('./photo-1484417894907-623942c8ee29.avif');
@@ -503,7 +479,7 @@ hr {
 }
 
 #services {
-    background-color: #060918;
+    background-color: #dfe1e7;
     /* width: 100%; */
     border-bottom: 1px  solid white;
     height: 100vh;
@@ -514,7 +490,7 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #fff;
+    color: #141414;
 }
 
 #services h1 {
@@ -566,6 +542,7 @@ hr {
     height: 25px;
     background-color: rgba(13, 13, 185, 0.829);
     color: white;
+    cursor: pointer;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
