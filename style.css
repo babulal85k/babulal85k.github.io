@@ -33,8 +33,15 @@ body {
 
 
 .blur {
-    backdrop-filter: blur(10px);
-    background-color: rgba(115, 114, 151, 0.342); /* Set a background color with alpha for transparency */
+   background-color: rgba(115, 114, 151, 0.342); /* Set a background color with alpha for transparency */
+}
+
+@supports (backdrop-filter: blur(10px)) {
+    .blur {
+        /* Style for browsers that support backdrop-filter */
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.2);
+    }
 }
 
 .border {
@@ -227,8 +234,15 @@ hr {
     }
     
     .blur {
-        backdrop-filter: blur(10px);
-        background-color: rgba(115, 114, 151, 0.342); /* Set a background color with alpha for transparency */
+       background-color: rgba(115, 114, 151, 0.342); /* Set a background color with alpha for transparency */
+    }
+
+    @supports (backdrop-filter: blur(10px)) {
+        .blur {
+            /* Style for browsers that support backdrop-filter */
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.2);
+        }
     }
     
     .border {
