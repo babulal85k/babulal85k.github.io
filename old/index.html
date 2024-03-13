@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babu Lal's Portfolio | Web Developer</title>
+    <link rel="shortcut icon" href="./photo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="nav_container" id="navContainer">
+        <nav id="nav_bar">
+            <div class="nav_btn">
+                <a class="links" href="#about">ABOUT ME</a>
+                <a class="links" href="#work">PROJECTS</a>
+                <a class="links" href="#services">SKILLS</a>
+            </div>
+            <div class="hamburger_menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav_btn2">
+                <ul>
+                    <li><a class="links2" href="#about">ABOUT ME</a></li>
+                    <li><a class="links2" href="#work">PROJECTS</a></li>
+                    <li><a class="links2" href="#services">SKILLS</a></li>
+                </ul>
+            </div>
+            <div class="nav_home">
+                <a class="links" id="home2" title="Navigate to Home" href="#">
+                    <span class="babu">BABU</span>
+                    <span class="lal">LAL</span>
+                    <span class="home">HOME</span>
+                    <span class="mandal">MANDAL</span></a>
+            </div>
+            <div class="nav_contact">
+                <a class="links" href="#contact">CONTACT</a>
+                <a class="links" id="resume" href="./BabuLalMandal-cap01_001.pdf">RESUME</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home"  >
+        <!-- Welcome content goes here -->
+        
+        <div class="welcome2">
+            <p>
+                <span class="quotes">Explore innovation,</span> 
+                
+                <br>
+                    <span class="disco"> Discover </span>creativity.
+                
+                <br>
+                    Welcome to my digital showcase.
+                <br>
+                <br>
+                <span class="name">Babu Lal Mandal</span></p>
+        </div>
+        
+    </section>
+
+    <section id="space"></section>
+
+    <section id="about"  >
+        <!-- About Me content goes here -->
+        <div class="card_container_about">
+
+        </div>
+        <div class="card_container1">
+            <div class="text_con">
+                <h2>ABOUT ME</h2>
+                <p>
+                    "Hi! 👋 I'm Babu Lal Mandal – a tech enthusiast, problem solver, and BCA graduate from IGNOU. Passionate about diving into the dynamic realm of software development. Let's create something extraordinary together!"
+                </p>
+                <button class="resume" onclick="downloadResume()">Get Resume</button>
+            </div>
+        </div>
+        <!-- Add more content as needed -->
+    </section>
+
+    <section id="services"  >
+        <!-- Work content goes here -->
+        <h1>SKILLS</h1>
+        <div id="skills_container">
+            
+            <div class="card">
+                <img id="logo_skill" src="./Python-logo-notext.svg" alt="Python">
+                <h2>PYTHON</h2>
+            </div>
+            <div class="card">
+                <img id="logo_skill" src="./HTML5_logo_and_wordmark.svg" alt="Html">
+                <h2>HTML</h2>
+            </div>
+            <div class="card">
+                <img id="logo_skill" src="./CSS3_logo_and_wordmark.svg" alt="Css">
+                <h2>CSS</h2>
+            </div>
+            <div class="card">
+                <img id="logo_skill" src="./JavaScript-logo.png" alt="Javascript">
+                <h2>JAVASCRIPT</h2>
+            </div>
+            <div class="card">
+                <img id="logo_skill" src="./React_Logo_SVG.svg" alt="React">
+                <h2>REACT</h2>
+            </div>
+            <div class="card">
+                <img id="logo_skill" src="./GitHub_Invertocat_Logo.svg" alt="">
+                <h2>GITHUB</h2>
+            </div>
+        </div>
+        <!-- Add more content as needed -->
+    </section>
+
+
+    <section id="work">
+        <h1>PROJECTS</h1>
+        <div class="work_contain">
+            <div class="workcard">
+                <a  rel="noopener" href="https://meek-queijadas-47a3fb.netlify.app" target="_blank"  aria-label="Visit Example.com for more information">
+                    <div class="bestbuy">
+
+                    </div>
+                </a>
+            </div>
+            <div class="workcard">
+                <a  rel="noopener"href="https://lovely-pothos-cc0a00.netlify.app" target="_blank" aria-label="Visit Example.com for more information">
+                    <div class="flipkart">
+
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Add more sections as needed -->
+
+    <section id="contact"  >
+        <!-- Contact content goes here -->
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/mvoegwnv" method="post" id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter  Your Name..." name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter Your Email Adress..." name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your massage" rows="4" required></textarea>
+    
+                <button type="submit" id="sub">SUBMIT</button>
+            </form>
+        </div>
+        <!-- Add more content as needed -->
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./photo.jpg" alt="Logo">
+                <span>Babu Lal</span>
+            </div>
+            <div class="footer-links">
+                <a href="./index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a aria-label="Visit Example.com for more information" rel="noopener" href="https://www.linkedin.com/in/babulal85k" target="_blank" title="LinkedIn"><img src="./linked.svg" alt="LinkedIn"></a>
+                <a aria-label="Visit Example.com for more information"  rel="noopener" href="https://github.com/babulal85k" target="_blank" title="GitHub"><img src="./GitHub_Invertocat_Logo.svg" alt="GitHub"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Babu lal's Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
