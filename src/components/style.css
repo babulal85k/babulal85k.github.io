@@ -2,6 +2,7 @@ body {
     background-image: url("../assets/annie-spratt-h-LcVG8W1XY-unsplash.jpg");
     background-size:cover;
     background-position: center;
+    color: white;
 }
 
 /* Navigation css */
@@ -27,12 +28,13 @@ body {
 
 /* middle Section */
 
+/* home */
 
 #home {
     
     height: 100vh;
     display: flex;
-    width: 80%;
+    width: auto;
     flex-direction: row;
     justify-content: center;
     /* position: fixed; */
@@ -91,3 +93,79 @@ body {
       transform: translateY(-5px);
     }
   }
+
+  /* About */
+
+  #about {
+    height: 100vh;
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: center;
+    /* position: fixed; */
+    border: 2px solid green;
+    margin: 20px;
+    /* top: 0; */
+    z-index: 800;
+  }
+
+  /* skills */
+
+  #skills {
+    height: 100vh;
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: center;
+    /* position: fixed; */
+    border: 2px solid green;
+    margin: 20px;
+    /* top: 0; */
+    z-index: 800;
+  }
+
+  /* Projects */
+
+#projects {
+    height: 100vh;
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: center;
+    /* position: fixed; */
+    border: 2px solid green;
+    margin: 20px;
+    /* top: 0; */
+    z-index: 800;
+}
+
+/* Contact */
+
+#contact {
+    height: 100vh;
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: center;
+    /* position: fixed; */
+    border: 2px solid green;
+    margin: 20px;
+    /* top: 0; */
+    z-index: 800;
+}
+
+
+/* Footer */
+
+#footer {
+    height: 20vh;
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: center;
+    /* position: fixed; */
+    border: 2px solid green;
+    margin: 20px;
+    /* top: 0; */
+    z-index: 800;
+}
