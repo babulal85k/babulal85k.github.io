@@ -4,15 +4,19 @@ const Home = () => {
     return (
         <>
             <div id="home">
-                {/* Welcome content goes here */}
-                <div className="welcome2">
-                    <p>
-                        <span className="quotes">I'm</span>
-                        <br />
-                        <span className="name"> Babu Lal Mandal </span>
-                        <br />
-                        <span className='disco'>Welcome to my digital showcase.</span>
-                    </p>
+                <div className="home-container">
+                    <div className="image-cover">
+                        <img className="profileImg" src="../assets/IMG_20240313_080808.jpg" alt="profile" />
+                    </div>
+                    <div className="welcome2">
+                        <p>
+                            <span className="quotes">My name is</span>
+                            <br />
+                            <span className="name"> Babu Lal Mandal </span>
+                            <br />
+                            <span className='disco'>Welcome to my digital showcase.</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </>
