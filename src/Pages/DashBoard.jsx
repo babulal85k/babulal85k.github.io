@@ -14,8 +14,8 @@ function DashBoard() {
     <>
       <NavBar />
       <Home />
-      <Skills />
       <About />
+      <Skills />
       <Projects />
       <Contact />
       <Footer />
