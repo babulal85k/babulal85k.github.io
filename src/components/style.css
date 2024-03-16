@@ -1,6 +1,11 @@
+:root {
+  --primary-color: rgb(14, 14, 126); /* Blue */
+  --secondary-color: rgb(52, 171, 207); /* Gray */
+}
+
 body {
     /* background-image: url("../assets/annie-spratt-h-LcVG8W1XY-unsplash.jpg"); */
-    background-color: rgb(14, 14, 126);
+    background-color: var(--primary-color);
     background-size:cover;
     background-position: center;
     color: white;
@@ -56,7 +61,7 @@ html {
 }
 
 .aboutBtn:hover, .projectBtn:hover, .skillsBtn:hover, .homeBtn:hover, .contactBtn:hover {
-  background-color: rgb(52, 171, 207);
+  background-color: var(--secondary-color);
   border-radius: 5px;
   color: #000;
 }
@@ -71,7 +76,7 @@ html {
 
 .resumeBtn {
   color: rgb(239, 239, 243);
-  border: 1px solid rgb(71, 206, 18);
+  border: 1px solid rgb(18, 146, 206);
   background-color: rgb(10, 61, 231);
   cursor: pointer;
   text-transform: uppercase;
@@ -257,7 +262,7 @@ html {
     background-position: center;
     background-size: cover;
     border: 4px solid rgb(166, 196, 206);
-    border-radius: 50%;
+    border-radius: 2%;
     height: 11rem;
     overflow: hidden;
     width: 11rem;
@@ -314,11 +319,33 @@ html {
     top: 0;
 
   }
+
+  .hi {
+    display: none;
+  }
+
+  .quotes {
+    display: none;
+  }
+
+  .aboutText {
+    display: none;
+    font-size: 0.6rem;
+  }
+
+  .aboutTexts{
+    display: block;
+  }
+
+  .aboutHead{
+    font-size: 10px;
+  }
+  
 }
 
   .DownBtn {
     color: rgb(239, 239, 243);
-    border: 1px solid rgb(71, 206, 18);
+    border: 1px solid rgb(18, 184, 206);
     background-color: rgb(10, 61, 231);
     cursor: pointer;
     text-transform: uppercase;
@@ -339,7 +366,7 @@ html {
 
   .ContactBtn {
     color: rgb(239, 239, 243);
-    border: 1px solid rgb(71, 206, 18);
+    border: 1px solid rgb(18, 206, 206);
     background-color: rgb(8, 18, 51);
     cursor: pointer;
     text-transform: uppercase;
@@ -366,7 +393,7 @@ html {
   background-position: center;
   background-size: cover;
   border: 4px solid rgb(166, 196, 206);
-  border-radius: 50%;
+  border-radius: 2%;
   height: 22rem;
   overflow: hidden;
   width: 22rem;
@@ -376,45 +403,179 @@ html {
   /* About */
 
   #about {
-    height: 100vh;
+    height: 10vh;
     display: flex;
     width: auto;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     /* border: 2px solid green; */
     margin: 20px;
     top: 0;
     z-index: 800;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f900;
+    padding-top: 10%;
   }
 
+  .aboutHead {
+    font-size: 25px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+  }
+
+  .aboutText {
+    font-size: 17px;
+    text-transform:uppercase;
+    width: 60%;
+    text-align: center;
+    word-wrap: break-word;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+
+  .aboutTexts{
+    display: none;
+  }
+
+ 
+
   /* skills */
+
 
   #skills {
     height: 100vh;
     display: flex;
     width: auto;
-    flex-direction: row;
+    background-color: var(--primary-color);
+    flex-direction: column;
     justify-content: center;
-    /* position: fixed; */
-    /* border: 2px solid green; */
+    align-items: center;
     margin: 20px;
-    /* top: 0; */
+    width: 100%;
     z-index: 800;
   }
+
+  #skills > h1 {
+    text-transform: uppercase;
+    color: var(--secondary-color);
+
+  }
+
+  .skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
+  }
+  
+  .skill-card {
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .skill-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
 
   /* Projects */
 
 #projects {
     height: 100vh;
     display: flex;
-    width: auto;
-    flex-direction: row;
+    width: 100%;
+    flex-direction: column;
     justify-content: center;
-    /* position: fixed; */
-    /* border: 2px solid green; */
+    align-items: center;
     margin: 20px;
-    /* top: 0; */
     z-index: 800;
+}
+
+#projects > h1 {
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.project-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  align-items: center;
+}
+
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px;
+  width: 20%;
+  border: 2px solid var(--secondary-color);
+  margin-right: 5%;
+  border-radius: 5%;
+  margin-top: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card > img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+#github {
+  text-decoration: none;
+  color: var(--secondary-color);
+  margin-left: 10px;
+  border: 1px solid var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#github:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  border: 1px solid white;
+}
+
+#live {
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+  border: 1px solid red;
+  padding: 10px 18px;
+  border-radius: 5px;
+  background-color: red;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#live:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  border: 1px solid white;
 }
 
 /* Contact */

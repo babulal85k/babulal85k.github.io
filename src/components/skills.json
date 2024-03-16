@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "CSS",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+  },
+  {
+    "id": 2,
+    "name": "HTML",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+  },
+  {
+    "id": 3,
+    "name": "PYTHON",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+  },
+  {
+    "id": 4,
+    "name": "GIT",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg"
+  },
+  {
+    "id": 5,
+    "name": "JAVASCRIPT",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg"
+  },
+  {
+    "id": 6,
+    "name": "REACT",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg"
+  }
+]

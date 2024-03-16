@@ -5,31 +5,28 @@ import { scrollToSection } from "./NavBar";
 const Home = () => {
 
 
-    const handleDownload = () => {
-        // Create a new PDF document
-        const doc = new jsPDF();
-      
-        // Add content to the PDF document
-        doc.text('Hello, World!', 10, 10);
-      
-        // Save the PDF document as a blob
-        const blob = doc.output('blob');
-      
-        // Create a temporary URL to the blob
-        const url = window.URL.createObjectURL(blob);
-      
-        // Create a hidden <a> element to trigger the download
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = 'document.pdf'; // Set the filename for the downloaded PDF
-      
-        // Append the <a> element to the document body and click it programmatically
-        document.body.appendChild(link);
-        link.click();
-      
-        // Clean up by revoking the temporary URL
-        window.URL.revokeObjectURL(url);
-      };
+    function downloadResume() {
+        // Replace 'path/to/your/resume.pdf' with the actual path to your resume file
+        var fileUrl = "https://drive.google.com/file/d/1yWmtDuNSKkK0jfMoV7kDkglV7VWtaW10/view?usp=sharing";
+        
+        // Create a link element
+        var downloadLink = document.createElement('a');
+        
+        // Set the href attribute to the file path
+        downloadLink.href = fileUrl;
+        
+        // Set the download attribute with the desired filename
+        downloadLink.download = 'Babu_Lal_Mandal_Resume.pdf';
+        
+        // Append the link to the body
+        document.body.appendChild(downloadLink);
+        
+        // Trigger a click on the link to start the download
+        downloadLink.click();
+        
+        // Remove the link from the body
+        document.body.removeChild(downloadLink);
+      }
       
 
     return (
@@ -47,10 +44,10 @@ const Home = () => {
                             <br />
                             <span className="name"> Babu Lal Mandal </span>
                             <br />
-                            <a href="../assets/resume.pdf" download="resume.pdf">
-                                <button className='DownBtn' >Download CV</button>
-                            </a>
-                            <button className='ContactBtn' onClick={() => scrollToSection("contact")}>Contact ME</button>
+                            
+                            <button className='DownBtn' onClick={ () => downloadResume() } >Download CV</button>
+                            
+                            <button className='ContactBtn' onClick={ () => scrollToSection("contact") }>Contact ME</button>
                         </p>
                     </div>
                 </div>
