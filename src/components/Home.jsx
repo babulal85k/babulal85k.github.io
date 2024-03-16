@@ -1,5 +1,6 @@
 import React from 'react';
 import jsPDF from 'jspdf';
+import { scrollToSection } from "./NavBar";
 
 const Home = () => {
 
@@ -40,16 +41,16 @@ const Home = () => {
                     </div>
                     <div className="welcome2">
                         <p>
-                            <span className='hi'>Hi</span>
+                            <span className='hi'>Hello</span>
                             <br />
-                            <span className="quotes">My name is</span>
+                            <span className="quotes">I AM</span>
                             <br />
                             <span className="name"> Babu Lal Mandal </span>
                             <br />
                             <a href="../assets/resume.pdf" download="resume.pdf">
                                 <button className='DownBtn' >Download CV</button>
                             </a>
-                            <button className='ContactBtn'>Contact ME</button>
+                            <button className='ContactBtn' onClick={() => scrollToSection("contact")}>Contact ME</button>
                         </p>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 body {
     /* background-image: url("../assets/annie-spratt-h-LcVG8W1XY-unsplash.jpg"); */
-    background-color: rgb(8, 8, 51);
+    background-color: rgb(14, 14, 126);
     background-size:cover;
     background-position: center;
     color: white;
@@ -19,12 +19,19 @@ body {
 
 .nav-bar {
     display: flex;
-    /* border: 2px red solid; */
     align-items: center;
-    justify-content: space-evenly;
-    padding-top: 10px;
+    justify-content: center;
     position: fixed;
-    width: 80%;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-backdrop-filter: blur(15px);
+    background: rgba(0, 0, 0, .3);
+    border-radius: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 0;
 }
 
 html {
@@ -35,24 +42,28 @@ html {
 
 .aboutBtn, .projectBtn, .skillsBtn, .homeBtn, .contactBtn {
   color: rgb(239, 239, 243);
-  border: 1px solid lightblue;
-  background-color: rgb(10, 61, 231);
+  border: none;
+  background: rgba(0, 0, 0, 0);
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 400;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  border-radius: 5px;
+  /* border-radius: 50%; */
+  /* width: 60px; */
+  /* height: 40px; */
   padding: 5px 10px;
   margin-right: 5px;
 }
 
 .aboutBtn:hover, .projectBtn:hover, .skillsBtn:hover, .homeBtn:hover, .contactBtn:hover {
   background-color: rgb(52, 171, 207);
+  border-radius: 5px;
   color: #000;
 }
 
 .active {
   background-color: rgb(52, 171, 207);
+  border-radius: 5px;
   color: #000;
 }
 
@@ -89,7 +100,7 @@ html {
     flex-direction: row;
     justify-content: center;
     /* position: fixed; */
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin: 20px;
     /* top: 0; */
     z-index: 800;
@@ -97,13 +108,16 @@ html {
 
 
 .quotes {
+    text-align: center;
     display: inline-block;
-    font-size: 35px;
+    font-size: 45px;
     overflow: hidden;
-    margin-left: 40px;
+    
+    margin: 20px 0px;
+    margin-left: 100px;
     border-right: 0.1em solid #fcfcfc;
     white-space: nowrap;
-    animation: typewriter 3s steps(30) infinite;
+    animation: typewriter 3s steps(20) infinite;
   }
   
   @keyframes typewriter {
@@ -112,15 +126,10 @@ html {
     }
   
     to {
-      width: 200px;
+      width: auto;
     }
   }
   
-.disco {
-    color: white;
-    font-size: 20px;
-    width: auto;
-}
   
 
 .name {
@@ -131,7 +140,7 @@ html {
   }
   
   .hi {
-    font-size: 40px;
+    font-size: 20px;
     margin-left: 80px;
     margin-bottom: 20px;
   }
@@ -140,7 +149,7 @@ html {
     display: flex;
     width: 100%;
     align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     flex-wrap: wrap;
   }
 
@@ -160,6 +169,152 @@ html {
     margin-left: 10%;
     margin-right: 10%;
   }
+
+  /* mediascree  */
+
+  @media screen and (max-width:1024px) {
+    
+    .image-cover{
+      margin-left: 5%;
+      margin-right: 10%;
+    }
+  
+    .welcome2 {
+      margin-left: 5%;
+      margin-right: 10%;
+    }
+
+    .nav-bar {
+      display: flex;
+      /* border: 2px red solid; */
+      align-items: center;
+      justify-content: center;
+      /* padding-top: 10px; */
+      position: fixed;
+      width: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+      -webkit-backdrop-filter: blur(15px);
+      background: rgba(0, 0, 0, .3);
+      border-radius: 20px;
+      margin-top: 2%;
+      /* padding-bottom: 5px; */
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    
+    .image-cover{
+      margin-left: 25%;
+      margin-right: 10%;
+    }
+  
+    .welcome2 {
+      margin-left: 25%;
+      margin-right: 10%;
+    }
+}
+
+@media screen and (max-width:1352px) {
+    
+  .image-cover{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .welcome2 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width:1130px) {
+    
+  .image-cover{
+    margin-left: 33%;
+    margin-right: 10%;
+  }
+
+  .welcome2 {
+    margin-left: 35%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width:320px) {
+    
+  .image-cover{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .welcome2 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .image-cover{
+    background-position: center;
+    background-size: cover;
+    border: 4px solid rgb(166, 196, 206);
+    border-radius: 50%;
+    height: 11rem;
+    overflow: hidden;
+    width: 11rem;
+    background-image: url("../assets/IMG_20240313_080808.jpg");
+  }
+
+  .name {
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  
+  .hi {
+    font-size: 10px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+  }
+
+  .quotes {
+    text-align: center;
+    display: inline-block;
+    font-size: 26px;
+    overflow: hidden;
+    
+    margin: 10px 0px;
+    margin-left: 50px;
+    border-right: 0.1em solid #fcfcfc;
+    white-space: nowrap;
+    animation: typewriter 3s steps(20) infinite;
+  }
+  
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+  
+    to {
+      width: auto;
+    }
+  }
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 90%;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    -webkit-backdrop-filter: blur(15px);
+    background: rgba(0, 0, 0, .3);
+    border-radius: 20px;
+    top: 0;
+
+  }
+}
 
   .DownBtn {
     color: rgb(239, 239, 243);
@@ -226,7 +381,7 @@ html {
     width: auto;
     flex-direction: row;
     justify-content: center;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin: 20px;
     top: 0;
     z-index: 800;
@@ -241,7 +396,7 @@ html {
     flex-direction: row;
     justify-content: center;
     /* position: fixed; */
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin: 20px;
     /* top: 0; */
     z-index: 800;
@@ -256,7 +411,7 @@ html {
     flex-direction: row;
     justify-content: center;
     /* position: fixed; */
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin: 20px;
     /* top: 0; */
     z-index: 800;
@@ -271,7 +426,7 @@ html {
     flex-direction: row;
     justify-content: center;
     /* position: fixed; */
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin: 20px;
     /* top: 0; */
     z-index: 800;
@@ -287,7 +442,7 @@ html {
     flex-direction: row;
     justify-content: center;
     /* position: fixed; */
-    border: 2px solid green;
+    /* border: 2px solid green; */
     margin: 20px;
     /* top: 0; */
     z-index: 800;
