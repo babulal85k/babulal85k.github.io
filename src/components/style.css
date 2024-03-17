@@ -30,7 +30,7 @@ body {
     width: auto;
     padding-left: 10px;
     padding-right: 10px;
-    -webkit-backdrop-filter: blur(15px);
+    /* -webkit-backdrop-filter: blur(15px); */
     background: rgba(0, 0, 0, .3);
     border-radius: 20px;
     margin-top: 10px;
@@ -199,7 +199,7 @@ html {
       width: auto;
       padding-left: 10px;
       padding-right: 10px;
-      -webkit-backdrop-filter: blur(15px);
+      /* -webkit-backdrop-filter: blur(15px); */
       background: rgba(0, 0, 0, .3);
       border-radius: 20px;
       margin-top: 2%;
@@ -313,7 +313,7 @@ html {
     width: 90%;
     /* padding-left: 10px; */
     /* padding-right: 10px; */
-    -webkit-backdrop-filter: blur(15px);
+    /* -webkit-backdrop-filter: blur(15px); */
     background: rgba(0, 0, 0, .3);
     border-radius: 20px;
     top: 0;
@@ -580,18 +580,76 @@ html {
 
 /* Contact */
 
+.contact-form {
+  margin-right: 20%;
+}
+
+.contact-form > h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
 #contact {
     height: 100vh;
     display: flex;
     width: auto;
-    flex-direction: row;
+    flex-direction:row-reverse;
     align-items: center;
     justify-content: center;
-    /* position: fixed; */
     /* border: 2px solid green; */
-    margin: 20px;
-    /* top: 0; */
     z-index: 800;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.whatsapp {
+  margin-bottom: 12%;
+  padding: 10px;
+  padding: 20px 100px;
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  font-size: 20px;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.whatsapp:hover {
+  color: #000;
+  background-color: var(--secondary-color);
+}
+
+.whatsapp > p {
+  color: beige;
+}
+
+.gmail {
+  padding: 20px 100px;
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  font-size: 20px;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.gmail:hover {
+  color: #000;
+  background-color: var(--secondary-color);
+}
+
+.gmail > p {
+  text-transform: lowercase;
+  color: beige;
 }
 
 
@@ -600,7 +658,7 @@ label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 
 /* Style for the input field */
@@ -608,7 +666,8 @@ input {
   width: 100%;
   padding: 10px;
   margin-bottom: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--primary-color);
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 16px;
@@ -618,7 +677,8 @@ textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--primary-color);
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 16px;
@@ -631,6 +691,11 @@ input:focus {
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional: Add a subtle box shadow */
 }
 
+textarea:focus {
+  border-color: #007bff; /* Change to your preferred focus color */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
 
 #sub {
   border: none;
@@ -641,22 +706,12 @@ input:focus {
   margin-top: 30px;
   height: 35px;
   background-color: rgba(13, 13, 185, 0.829);
-  color: white;
+  color: var(--secondary-color);
   cursor: pointer;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-/* Footer */
-
-#footer {
-    height: 20vh;
-    display: flex;
-    width: auto;
-    flex-direction: row;
-    justify-content: center;
-    /* position: fixed; */
-    /* border: 2px solid green; */
-    margin: 20px;
-    /* top: 0; */
-    z-index: 800;
+#sub:hover {
+  color: black;
+  background-color: var(--secondary-color);
 }

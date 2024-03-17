@@ -1,6 +1,21 @@
 import React from 'react'
 
 const Contact = () => {
+
+  const handleClick = (contact) => {
+    switch(contact) {
+      case 'whatsapp':
+        window.open('https://wa.me/+917488230355', '_blank');
+        break;
+      case 'gmail':
+        window.open('mailto:madhukarbabulal5@gmail.com', '_blank');
+        break;
+      default:
+        break;
+    }
+  }
+
+
   return (
     <div id='contact'>
       <div className="contact-form">
@@ -32,10 +47,18 @@ const Contact = () => {
             defaultValue={""}
           />
           <button type="submit" id="sub">
-            SUBMIT
+            Send
           </button>
         </form>
       </div>
+      <div className="socialMedia">
+          <button className="whatsapp" onClick={() => handleClick('whatsapp')}>WhatsApp
+            <p>+917488230355</p>
+          </button>
+          <button className="gmail" onClick={() => handleClick('gmail')}>Gmail
+            <p>madhukarbabulal5@gmail.com</p>
+          </button>
+        </div>
     </div>
   )
 }
