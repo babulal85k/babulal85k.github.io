@@ -27,7 +27,7 @@
     "id": 3,
     "name": "BlueFly",
     "description": "An e-commerce website named BlueFly, developed using React.",
-    "img": "../../bluefly.png",
+    "img": "../bluefly.png",
     "git": "https://github.com/babulal85k/BlueEcho",
     "live": "https://bluecho.netlify.app"
   }
