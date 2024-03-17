@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "BestBuy",
-    "img": "../../bestbuy.png",
+    "img": "../bestbuy.png",
     "description": "A clone of the BestBuy website, created using React.",
     "git": "https://github.com/babulal85k/bestbuy_clone",
     "live": "https://meek-queijadas-47a3fb.netlify.app"
@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Flipkart",
     "description": "A clone of the Flipkart website, built with React.",
-    "img": "../../flipkart.png",
+    "img": "../flipkart.png",
     "git": "https://github.com/babulal85k/flipkart_clone",
     "live": "https://lovely-pothos-cc0a00.netlify.app"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "name": "BlueFly",
     "description": "An e-commerce website named BlueFly, developed using React.",
-    "img": "../../bluefly.png",
+    "img": "../bluefly.png",
     "git": "https://github.com/babulal85k/BlueEcho",
     "live": "https://bluecho.netlify.app"
   },
