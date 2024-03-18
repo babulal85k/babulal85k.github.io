@@ -372,7 +372,7 @@ hr {
     margin-left: 40px;
     border-right: 0.1em solid #000;
     white-space: nowrap;
-    animation: typewriter 3s steps(40) infinite;
+     
   }
   
   @keyframes typewriter {

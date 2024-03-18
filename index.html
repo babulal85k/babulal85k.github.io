@@ -4,14 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; URL='https://babulal85k.netlify.app/'" />
+    <!-- <meta http-equiv="refresh" content="0; URL='https://babulal85k.netlify.app/'" /> -->
     <title>Babu Lal's Portfolio | Web Developer</title>
     <link rel="shortcut icon" href="./photo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <style>
+        
+
+        .redirect {
+            color: black;
+            padding: 10px;
+            /* background-color: blueviolet; */
+            font-size: 20px;
+            margin: 10px;
+            height: 10px;
+            /* margin-top: 10%; */
+           }
+
+        .dot {
+            animation: typewriter 3s steps(40) infinite;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+        // Find an element to scroll to (you can adjust this to your needs)
+        var elementToScrollTo = document.getElementById('scrollTarget');
+        // Scroll to the element smoothly
+        elementToScrollTo.scrollIntoView({
+            behavior: 'smooth'
+        });
+        // Allow scrolling again after the redirect is complete
+        document.body.style.overflowY = 'auto';
+        };
+    </script>
 </head>
 
 <body>
-    <p>If you are not redirected automatically, <a href="https://babulal85k.netlify.app/">click here</a>.</p>
+    
     <header class="nav_container" id="navContainer">
         <nav id="nav_bar">
             <div class="nav_btn">
@@ -181,9 +210,11 @@
         <div class="footer-bottom">
             <p>&copy; 2024 Babu lal's Portfolio. All rights reserved.</p>
         </div>
+        <p class="redirect">If you are not redirected automatically <span class="dot">...</span>, <a href="https://babulal85k.netlify.app/">click here</a>.</p>
     </footer>
-
+    
     <script src="./script.js"></script>
+    
 </body>
 
 </html>
