@@ -108,7 +108,7 @@ html {
     justify-content: center;
     margin: 0;
     z-index: 800;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 
@@ -246,7 +246,7 @@ html {
     z-index: 800;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 5px;
-    background-color: #f9f9f900;
+    /* background-color: #f9f9f900; */
     padding-top: 80px;
   }
 
