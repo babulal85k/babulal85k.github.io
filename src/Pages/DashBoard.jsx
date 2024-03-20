@@ -6,6 +6,7 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import About from "../components/About";
 import Contact from "../components/Contact";
+import Achievement from '../components/Achievement';
 
 function DashBoard() {
   
@@ -17,6 +18,7 @@ function DashBoard() {
       <About />
       <Skills />
       <Projects />
+      <Achievement />
       <Contact />
       <Footer />
     </>

@@ -3,12 +3,14 @@
   --secondary-color: rgb(52, 171, 207); /* Gray */
 }
 
+
 body {
     /* background-image: url("../assets/annie-spratt-h-LcVG8W1XY-unsplash.jpg"); */
     background-color: var(--primary-color);
     background-size:cover;
     background-position: center;
     color: white;
+    margin: 0;
 }
 
 /* Navigation css */
@@ -18,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     /* border: 2px  solid red; */
 }
 
@@ -104,11 +106,9 @@ html {
     width: auto;
     flex-direction: row;
     justify-content: center;
-    /* position: fixed; */
-    /* border: 2px solid green; */
-    margin: 20px;
-    /* top: 0; */
+    margin: 0;
     z-index: 800;
+    background-color: blue;
 }
 
 
@@ -175,173 +175,6 @@ html {
     margin-right: 10%;
   }
 
-  /* mediascree  */
-
-  @media screen and (max-width:1024px) {
-    
-    .image-cover{
-      margin-left: 5%;
-      margin-right: 10%;
-    }
-  
-    .welcome2 {
-      margin-left: 5%;
-      margin-right: 10%;
-    }
-
-    .nav-bar {
-      display: flex;
-      /* border: 2px red solid; */
-      align-items: center;
-      justify-content: center;
-      /* padding-top: 10px; */
-      position: fixed;
-      width: auto;
-      padding-left: 10px;
-      padding-right: 10px;
-      /* -webkit-backdrop-filter: blur(15px); */
-      background: rgba(0, 0, 0, .3);
-      border-radius: 20px;
-      margin-top: 2%;
-      /* padding-bottom: 5px; */
-    }
-  }
-
-  @media screen and (max-width:768px) {
-    
-    .image-cover{
-      margin-left: 25%;
-      margin-right: 10%;
-    }
-  
-    .welcome2 {
-      margin-left: 25%;
-      margin-right: 10%;
-    }
-}
-
-@media screen and (max-width:1352px) {
-    
-  .image-cover{
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  .welcome2 {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-@media screen and (max-width:1130px) {
-    
-  .image-cover{
-    margin-left: 33%;
-    margin-right: 10%;
-  }
-
-  .welcome2 {
-    margin-left: 35%;
-    margin-right: 10%;
-  }
-}
-
-@media screen and (max-width:320px) {
-    
-  .image-cover{
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  .welcome2 {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  .image-cover{
-    background-position: center;
-    background-size: cover;
-    border: 4px solid rgb(166, 196, 206);
-    border-radius: 2%;
-    height: 11rem;
-    overflow: hidden;
-    width: 11rem;
-    background-image: url("../assets/IMG_20240313_080808.jpg");
-  }
-
-  .name {
-    display: inline-block;
-    color: white;
-    font-size: 30px;
-    margin-left: 20px;
-  }
-  
-  .hi {
-    font-size: 10px;
-    margin-left: 80px;
-    margin-bottom: 20px;
-  }
-
-  .quotes {
-    text-align: center;
-    display: inline-block;
-    font-size: 26px;
-    overflow: hidden;
-    
-    margin: 10px 0px;
-    margin-left: 50px;
-    border-right: 0.1em solid #fcfcfc;
-    white-space: nowrap;
-    animation: typewriter 3s steps(20) infinite;
-  }
-  
-  @keyframes typewriter {
-    from {
-      width: 0;
-    }
-  
-    to {
-      width: auto;
-    }
-  }
-
-  .nav-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    width: 90%;
-    /* padding-left: 10px; */
-    /* padding-right: 10px; */
-    /* -webkit-backdrop-filter: blur(15px); */
-    background: rgba(0, 0, 0, .3);
-    border-radius: 20px;
-    top: 0;
-
-  }
-
-  .hi {
-    display: none;
-  }
-
-  .quotes {
-    display: none;
-  }
-
-  .aboutText {
-    display: none;
-    font-size: 0.6rem;
-  }
-
-  .aboutTexts{
-    display: block;
-  }
-
-  .aboutHead{
-    font-size: 10px;
-  }
-  
-}
 
   .DownBtn {
     color: rgb(239, 239, 243);
@@ -403,21 +236,18 @@ html {
   /* About */
 
   #about {
-    height: 10vh;
+    height: 100vh;
     display: flex;
     width: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid green; */
-    margin: 20px;
-    top: 0;
+    margin: 0;
     z-index: 800;
-    font-family: Arial, sans-serif;
-    padding: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border-radius: 5px;
     background-color: #f9f9f900;
-    padding-top: 10%;
+    padding-top: 80px;
   }
 
   .aboutHead {
@@ -448,13 +278,9 @@ html {
   #skills {
     height: 100vh;
     display: flex;
-    width: auto;
-    background-color: var(--primary-color);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-    width: 100%;
     z-index: 800;
   }
 
@@ -482,8 +308,9 @@ html {
     width: 200px;
     margin: 10px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 50px;
     text-align: center;
+    border: 4px solid var(--secondary-color);
   }
   
   .skill-card img {
@@ -498,11 +325,9 @@ html {
 #projects {
     height: 100vh;
     display: flex;
-    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
     z-index: 800;
 }
 
