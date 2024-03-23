@@ -7,7 +7,7 @@ const Home = () => {
 
     function downloadResume() {
         // Replace 'path/to/your/resume.pdf' with the actual path to your resume file
-        var fileUrl = "https://drive.google.com/file/d/1yWmtDuNSKkK0jfMoV7kDkglV7VWtaW10/view?usp=sharing";
+        var fileUrl = "/images/Babu Lal Mandal-cap01_001-Frontend Developer(React)_2.pdf";
         
         // Create a link element
         var downloadLink = document.createElement('a');

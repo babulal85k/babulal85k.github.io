@@ -113,28 +113,28 @@ html {
 
 
 .quotes {
-    text-align: center;
-    display: inline-block;
-    font-size: 45px;
-    overflow: hidden;
-    
-    margin: 20px 0px;
-    margin-left: 100px;
-    border-right: 0.1em solid #fcfcfc;
-    white-space: nowrap;
-    animation: typewriter 3s steps(20) infinite;
+  text-align: center;
+  display: inline-block;
+  font-size: 65px;
+  color: yellow;
+  margin-left: 80px;
+  opacity: 0; /* Start with 0 opacity */
+  transform: translateX(-100%); /* Start off-screen to the left */
+  animation: slideInFromLeft 2s infinite; /* Use the slideInFromLeft animation with a duration of 1 second */
+}
+
+@keyframes slideInFromLeft {
+  from {
+      opacity: 0; /* Start with 0 opacity */
+      transform: translateX(-100%); /* Start off-screen to the left */
   }
-  
-  @keyframes typewriter {
-    from {
-      width: 0;
-    }
-  
-    to {
-      width: auto;
-    }
+  to {
+      opacity: 1; /* Fade in to full opacity */
+      transform: translateX(0); /* Slide in to the center */
   }
-  
+}
+
+
   
 
 .name {
@@ -369,6 +369,7 @@ html {
   width: 100%;
   height: auto;
   border-radius: 10px 10px 0 0;
+  border: 1px solid black;
 }
 
 .links {
