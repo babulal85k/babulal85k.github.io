@@ -276,7 +276,7 @@ html {
 
 
   #skills {
-    height: 50vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -414,25 +414,30 @@ html {
 
 /* Contact */
 
-.contact-form {
-  margin-right: 20%;
+#contact {
+    height: 100vh;
+    width: 100%;
+    margin-top: 10%;
+    z-index: 800;
 }
 
-.contact-form > h2 {
+#contact > h2 {
   text-transform: uppercase;
   text-align: center;
   color: var(--secondary-color);
 }
 
-#contact {
-    height: 100vh;
-    display: flex;
-    width: auto;
-    flex-direction:row-reverse;
-    align-items: center;
-    justify-content: center;
-    /* border: 2px solid green; */
-    z-index: 800;
+.cont-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  gap: 10%;
+}
+
+.contact-form{
+  margin-bottom: 10%;
 }
 
 .socialMedia {
@@ -440,13 +445,13 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  margin-bottom: 10%;
 }
 
 .whatsapp {
   margin-bottom: 12%;
   padding: 10px;
-  padding: 20px 100px;
+  padding: 10px 140px;
   background-color: var(--primary-color);
   border: 2px solid var(--secondary-color);
   border-radius: 10px;
@@ -466,7 +471,7 @@ html {
 }
 
 .gmail {
-  padding: 20px 100px;
+  padding: 10px 80px;
   background-color: var(--primary-color);
   border: 2px solid var(--secondary-color);
   border-radius: 10px;
@@ -474,6 +479,7 @@ html {
   color: var(--secondary-color);
   text-transform: uppercase;
   cursor: pointer;
+  margin-bottom: 12%;
 }
 
 .gmail:hover {
@@ -485,6 +491,8 @@ html {
   text-transform: lowercase;
   color: beige;
 }
+
+
 
 
 /* Style for the label */
@@ -532,17 +540,14 @@ textarea:focus {
 }
 
 #sub {
-  border: none;
+  border: 2px solid var(--secondary-color);
+  padding: 10px 100px;
   border-radius: 10px;
-  align-items: center;
-  width: 150px;
   font-size: 18px;
   margin-top: 30px;
-  height: 35px;
-  background-color: rgba(13, 13, 185, 0.829);
-  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  color: white;
   cursor: pointer;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 #sub:hover {
