@@ -7,6 +7,7 @@ import Projects from "../components/Projects";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Achievement from '../components/Achievement';
+import GitStatus from '../components/GitStatus';
 
 function DashBoard() {
   
@@ -18,6 +19,7 @@ function DashBoard() {
       <About />
       <Skills />
       <Projects />
+      <GitStatus />
       <Achievement />
       <Contact />
       <Footer />
